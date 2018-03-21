@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim10"
+        android:layout_marginRight="@dimen/dim10"
+        android:layout_marginTop="@dimen/dim10"
+        android:background="@drawable/rectangle_without_stroke"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+
+        <LinearLayout
+            android:id="@+id/PicassoImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                android:id="@+id/imageViews"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:foreground="?android:attr/selectableItemBackground" />
+
+
+                <ProgressBar
+                    android:id="@+id/image4_progress"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+
+
+            </FrameLayout>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ImageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+
+            <com.codewaves.youtubethumbnailview.ThumbnailView
+                android:id="@+id/thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@android:color/black"
+                android:foreground="?android:attr/selectableItemBackground" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pdfLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Attachments"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/pdfText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="The process of writing a job description ."
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/linearDownloadImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_download_to_storage_drive"
+                    android:tint="@color/medium_level_blue" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dim5"
+                    android:singleLine="true"
+                    android:text="Download"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/medium_level_blue"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/loadContentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <TextView
+                android:id="@+id/TextViewloadContentLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="The process of writing a job description ."
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

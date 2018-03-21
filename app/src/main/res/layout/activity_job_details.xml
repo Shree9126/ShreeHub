@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_height="wrap_content">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/detailsView"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangle_without_stroke"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtJobTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:maxLines="2"
+                    android:text="Buliding services coordinator"
+                    android:textAllCaps="true"
+                    android:textColor="#DE000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtJobApply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/apply_job"
+                    android:textColor="@color/medium_level_blue"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_300" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgCompanyProfilePic"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/profile_pic" />
+
+                <TextView
+                    android:id="@+id/txtCompanyName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/imgCompanyProfilePic"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:paddingLeft="@dimen/dim5"
+
+                    android:text="@string/job_companyName"
+                    android:textColor="#DE000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtCompanyWebsite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtCompanyName"
+                    android:layout_toRightOf="@id/imgCompanyProfilePic"
+                    android:fontFamily="@font/montserrat_light"
+                    android:paddingLeft="@dimen/dim5"
+                    android:text="@string/job_companySite"
+                    android:textColor="@color/medium_level_blue"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtPostedDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="07 Feb 2018 11.00 PM"
+                    android:textColor="#DE000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtReferenceNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Reference No.: 085845485485"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txtDistrictCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Company Location:"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:id="@+id/contactName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Contact Name:"
+                    android:textSize="@dimen/dim10"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/txtJobType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/type_job"
+                    android:textColor="#DE000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtJobSalaryRange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/txtJobType"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="$21.50 - $25.00/hour"
+                    android:textColor="#DE000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtWorkHoursDays"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/txtJobType"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="40 hours /week"
+                    android:textColor="#DE000000"
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/VacanciesId"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Vacancies"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/ConstructionId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="Construction &amp; architecture others"
+                    android:textSize="12sp" />
+
+
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_300" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dim10"
+                android:layout_marginTop="@dimen/dim10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtSummaryTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/txtSummary"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Summary"
+
+                    android:textColor="#DE000000"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txtSummary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/txtSummaryTitle"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/large_text"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/txtDescriptionTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtSummary"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Description"
+                    android:textColor="#DE000000"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txtDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/txtDescriptionTitle"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/large_text" />
+
+
+                <TextView
+                    android:id="@+id/txtRequirementTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtDescription"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Requirements"
+                    android:textColor="#DE000000"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/txtRequirementTitle"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/large_text"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txtPostedDates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/txtSummary"
+                    android:layout_alignStart="@+id/txtDescription"
+                    android:layout_marginBottom="186dp"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingLeft="@dimen/dim3"
+                    android:text="12,03,2018 11.00 PM"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>--><!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:background="@color/background_color"--><!--android:orientation="vertical"--><!--tools:context="com.mindnotix.youthhub.JobDetailsActivity">-->
+
+    <!--<android.support.v7.widget.Toolbar--><!--android:id="@+id/toolbar"--><!--android:layout_width="match_parent"--><!--android:layout_height="60dp"--><!--android:background="@color/colorPrimary"--><!--android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"--><!--app:title="Jobs details" />-->
+
+
+    <!--<ScrollView--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent">-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:layout_margin="@dimen/dim5"--><!--android:background="@drawable/rectangle_without_stroke"--><!--android:orientation="vertical"--><!--android:paddingLeft="@dimen/dim5"--><!--android:paddingRight="@dimen/dim5">-->
+
+    <!--<RelativeLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="50dp"--><!--android:gravity="center"--><!--android:orientation="horizontal">-->
+
+    <!--<TextView--><!--android:id="@+id/txtJobTitle"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignParentStart="true"--><!--android:fontFamily="sans-serif"--><!--android:text="@string/job_title"--><!--android:textColor="#DE000000"--><!--android:textSize="14sp" />-->
+
+    <!--<TextView--><!--android:id="@+id/txtJobApply"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignParentEnd="true"--><!--android:fontFamily="sans-serif"--><!--android:text="@string/apply_job"--><!--android:textColor="@color/medium_level_blue"--><!--android:textSize="14sp" />-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<View--><!--android:layout_width="match_parent"--><!--android:layout_height="1dp"--><!--android:background="@color/grey_300" />-->
+
+    <!--<RelativeLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_alignParentBottom="true"--><!--android:layout_centerHorizontal="true"--><!--android:layout_marginBottom="26dp"--><!--android:gravity="center"--><!--android:orientation="horizontal"--><!--android:padding="@dimen/dim5">-->
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView--><!--android:id="@+id/imgCompanyProfilePic"--><!--android:layout_width="40dp"--><!--android:layout_height="40dp"--><!--android:layout_alignParentStart="true"--><!--android:src="@drawable/profile_pic" />-->
+
+    <!--<TextView--><!--android:id="@+id/txtCompanyName"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_toRightOf="@id/imgCompanyProfilePic"--><!--android:fontFamily="sans-serif-condensed"--><!--android:paddingLeft="@dimen/dim5"--><!--android:text="@string/job_companyName"--><!--android:textColor="#DE000000"--><!--android:textSize="14sp" />-->
+
+    <!--<TextView--><!--android:id="@+id/txtCompanyWebsite"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_below="@id/txtCompanyName"--><!--android:layout_toRightOf="@id/imgCompanyProfilePic"--><!--android:paddingLeft="@dimen/dim5"--><!--android:text="@string/job_companySite"--><!--android:textColor="@color/medium_level_blue"--><!--android:textSize="10sp" />-->
+
+    <!--<TextView--><!--android:id="@+id/txtJobType"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignParentEnd="true"--><!--android:fontFamily="sans-serif-condensed"--><!--android:text="@string/type_job"--><!--android:textColor="#DE000000"--><!--android:textSize="14sp" />-->
+
+    <!--<TextView--><!--android:id="@+id/txtJobSalaryRange"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignParentEnd="true"--><!--android:layout_below="@id/txtJobType"--><!--android:fontFamily="sans-serif-condensed"--><!--android:text="$21.50 - $25.00/hour"--><!--android:textColor="#DE000000"--><!--android:textSize="12sp" />-->
+
+    <!--<TextView--><!--android:id="@+id/txtDistrictCity"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignParentStart="true"--><!--android:layout_below="@id/imgCompanyProfilePic"--><!--android:layout_marginTop="@dimen/dim5"--><!--android:fontFamily="sans-serif-condensed"--><!--android:text="New Market, Auckland"--><!--android:textColor="#DE000000"--><!--android:textSize="14sp" />-->
+
+    <!--<TextView--><!--android:id="@+id/txtWorkHoursDays"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignBaseline="@id/txtDistrictCity"--><!--android:layout_alignParentEnd="true"--><!--android:layout_below="@id/imgCompanyProfilePic"--><!--android:layout_marginTop="@dimen/dim5"--><!--android:fontFamily="sans-serif-condensed"--><!--android:text="40 hr(s) / week"--><!--android:textColor="#DE000000"--><!--android:textSize="14sp" />-->
+
+    <!--<TextView--><!--android:id="@+id/txtPostedDate_title"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignParentStart="true"--><!--android:layout_below="@id/txtDistrictCity"--><!--android:layout_marginTop="@dimen/dim10"--><!--android:text="Posted on"--><!--android:textSize="10sp" />-->
+
+    <!--<TextView--><!--android:id="@+id/txtPostedDate"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignBaseline="@id/txtPostedDate_title"--><!--android:layout_marginTop="@dimen/dim15"--><!--android:layout_toRightOf="@id/txtPostedDate_title"--><!--android:fontFamily="sans-serif-light"--><!--android:paddingLeft="@dimen/dim3"--><!--android:text="12,03,2018 11.00 PM"--><!--android:textSize="10sp" />-->
+
+
+    <!--<TextView--><!--android:id="@+id/txtReferenceNo"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignParentEnd="true"--><!--android:layout_below="@+id/txtWorkHoursDays"--><!--android:layout_marginTop="@dimen/dim10"--><!--android:fontFamily="sans-serif-light"--><!--android:paddingLeft="@dimen/dim3"--><!--android:text="123123123123"--><!--android:textSize="10sp" />-->
+
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignBaseline="@+id/txtReferenceNo"--><!--android:layout_toLeftOf="@+id/txtReferenceNo"--><!--android:fontFamily="sans-serif-light"--><!--android:text="Reference No.:"--><!--android:textSize="@dimen/dim10" />-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<View--><!--android:layout_width="match_parent"--><!--android:layout_height="1dp"--><!--android:background="@color/grey_300" />-->
+
+    <!--<RelativeLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginBottom="@dimen/dim10"--><!--android:layout_marginTop="@dimen/dim10"--><!--android:orientation="horizontal"--><!--android:padding="@dimen/dim5">-->
+
+    <!--<TextView--><!--android:id="@+id/txtSummaryTitle"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignParentTop="true"--><!--android:layout_alignStart="@+id/txtSummary"--><!--android:fontFamily="sans-serif-condensed"--><!--android:text="Summary"-->
+
+    <!--android:textColor="#DE000000"--><!--android:textSize="14sp"--><!--android:visibility="gone" />-->
+
+    <!--<TextView--><!--android:id="@+id/txtSummary"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:layout_below="@+id/txtSummaryTitle"--><!--android:layout_marginLeft="4dp"--><!--android:layout_marginRight="4dp"--><!--android:layout_marginTop="8dp"--><!--android:fontFamily="sans-serif-light"--><!--android:text="@string/large_text"--><!--android:visibility="gone" />-->
+
+
+    <!--<TextView--><!--android:id="@+id/txtDescriptionTitle"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_below="@+id/txtSummary"--><!--android:fontFamily="sans-serif-condensed"--><!--android:text="Description"--><!--android:textColor="#DE000000"--><!--android:textSize="14sp"--><!--android:visibility="gone" />-->
+
+    <!--<TextView--><!--android:id="@+id/txtDescription"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:layout_below="@+id/txtDescriptionTitle"--><!--android:layout_marginLeft="4dp"--><!--android:layout_marginRight="4dp"--><!--android:layout_marginTop="8dp"--><!--android:fontFamily="sans-serif-light"--><!--android:text="@string/large_text" />-->
+
+
+    <!--<TextView--><!--android:id="@+id/txtRequirementTitle"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_below="@+id/txtDescription"--><!--android:fontFamily="sans-serif-condensed"--><!--android:text="Requirements"--><!--android:textColor="#DE000000"--><!--android:textSize="14sp"--><!--android:visibility="gone" />-->
+
+    <!--<TextView--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:layout_below="@+id/txtRequirementTitle"--><!--android:layout_marginLeft="4dp"--><!--android:layout_marginRight="4dp"--><!--android:layout_marginTop="8dp"--><!--android:fontFamily="sans-serif-light"--><!--android:text="@string/large_text"--><!--android:visibility="gone" />-->
+
+    <!--</RelativeLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <!--</ScrollView>-->
+
+
+    <!--</LinearLayout>-->

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dim15">15dp</dimen>
+    <dimen name="dim20">20dp</dimen>
+    <dimen name="dim50">50dp</dimen>
+    <dimen name="dim150">150dp</dimen>
+    <dimen name="txtSize">15sp</dimen>
+    <dimen name="dim30">30dp</dimen>
+    <dimen name="dim25">25dp</dimen>
+    <dimen name="dim60">60dp</dimen>
+    <dimen name="dim5">4dp</dimen>
+    <dimen name="dim10">8dp</dimen>
+    <dimen name="dim12">12dp</dimen>
+    <dimen name="dim3">3dp</dimen>
+
+
+    <dimen name="tab_max_width">264dp</dimen>
+    <dimen name="tab_padding_bottom">16dp</dimen>
+    <dimen name="tab_label">14sp</dimen>
+    <dimen name="custom_tab_layout_height">72dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+
+    <dimen name="app_bar_height">256dp</dimen>
+    <dimen name="app_bar_height_with_fit_system_windows">256dp</dimen>
+
+    <!-- statusbar size is around 24dp. For complex view, you can handle header view height programmatically -->
+    <dimen name="google_play_cover">192dp</dimen>
+    <dimen name="google_play_cover_fitsSystemWindows">192dp</dimen>
+
+    <dimen name="view_pager_parallax_drawer_layout">256dp</dimen>
+    <dimen name="view_pager_parallax_drawer_layout_fitsSystemWindows">256dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+
+    <dimen name="feed_item_margin">5dp</dimen>
+    <dimen name="feed_item_padding_top_bottom">20dp</dimen>
+    <dimen name="feed_item_padding_left_right">15dp</dimen>
+    <dimen name="feed_item_profile_pic">50dp</dimen>
+    <dimen name="feed_item_profile_info_padd">10dp</dimen>
+    <dimen name="feed_item_profile_name">20dp</dimen>
+    <dimen name="feed_item_timestamp">13dp</dimen>
+    <dimen name="feed_item_status_pad_left_right">15dp</dimen>
+    <dimen name="feed_item_status_pad_top">13dp</dimen>
+    <dimen name="feed_item_corner_radius">3dp</dimen>
+    <dimen name="feed_item_border_width">1dp</dimen>
+    <dimen name="dim80">80dp</dimen>
+    <dimen name="dim40">40dp</dimen>
+    <dimen name="dim120">120dp</dimen>
+    <dimen name="dim100">100dp</dimen>
+    <dimen name="dim130">130dp</dimen>
+    <dimen name="recycler_padding">3dp</dimen>
+    <dimen name="dim14">14dp</dimen>
+    <dimen name="image_message_size">200dp</dimen>
+    <dimen name="dim6">6dp</dimen>
+
+</resources>

@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/logo"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/imgClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_close_black_24dp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/relativeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="top"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/imgCloses"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_close_black_24dp"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/relativeLayout"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="Confirm your email."
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:id="@+id/step1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="25dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Insert your unique code."
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/edittext_rectangle"
+                            android:orientation="horizontal">
+
+
+                            <EditText
+                                android:id="@+id/edtVerifyCode"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:hint="@string/veriry_code"
+                                android:inputType="number"
+                                android:maxLength="7"
+                                android:maxLines="1"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:textColorHint="@color/grey_400"
+                                android:textSize="15sp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="@dimen/dim5"
+                        android:gravity="top|center"
+                        android:orientation="horizontal">
+
+
+                        <Button
+                            android:id="@+id/btnVerifyEmail"
+                            android:layout_width="110dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="40dp"
+                            android:background="@drawable/button_rectangle_radius"
+                            android:fontFamily="sans-serif"
+                            android:text="Verify"
+                            android:textAllCaps="false"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@color/white"
+                            android:textStyle="normal" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Did you not receive the email?"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=" Send it again."
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:keepScreenOn="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/logo"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:id="@+id/relativeLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="top"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/imgClose"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_close_black_24dp"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/relativeLayout"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:text="Confirm your email."
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+
+                        <TextView
+                            android:id="@+id/step1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="25dp"
+                            android:fontFamily="sans-serif"
+                            android:text="Insert your unique code."
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/edittext_rectangle"
+                                android:orientation="horizontal">
+
+
+                                <EditText
+                                    android:id="@+id/edtVerifyCode"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="32dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:hint="@string/veriry_code"
+                                    android:inputType="number"
+                                    android:maxLength="7"
+                                    android:maxLines="1"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:textColorHint="@color/grey_400"
+                                    android:textSize="12sp" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginTop="@dimen/dim5"
+                            android:gravity="top|center"
+                            android:orientation="horizontal">
+
+
+                            <Button
+                                android:id="@+id/btnVerifyEmail"
+                                android:layout_width="110dp"
+                                android:layout_height="35dp"
+                                android:layout_marginTop="40dp"
+                                android:background="@drawable/button_rectangle_radius"
+                                android:fontFamily="sans-serif"
+                                android:text="Verify"
+                                android:textAllCaps="false"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/white"
+                                android:textStyle="normal" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Did you not receive the email?"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/txtLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=" Send it again."
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    -->
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/constrainlayouts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:descendantFocusability="beforeDescendants"
+        android:fitsSystemWindows="true"
+
+        android:focusableInTouchMode="true"
+        tools:context="com.mindnotix.youthhub.LoginActivity">
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dim20"
+            android:src="@drawable/logo"
+            app:layout_constraintStart_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dim20"
+            android:layout_marginTop="@dimen/dim20"
+            android:src="@drawable/ic_close_black_24dp"
+
+            android:visibility="visible"
+            app:layout_constraintBaseline_toBaselineOf="@+id/logo"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dim50"
+            android:text="Confirm your E-mail."
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/edtVerifyCode"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim5"
+            android:text="Insert your unique code."
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcome" />
+
+        <EditText
+            android:id="@+id/edtVerifyCode"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/dim20"
+            android:background="@drawable/edittext_rectangle"
+            android:hint="@string/veriry_code"
+            android:inputType="number"
+            android:maxLength="7"
+            android:maxLines="1"
+            android:padding="@dimen/dim10"
+            android:paddingLeft="@dimen/dim15"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4" />
+
+
+        <Button
+            android:id="@+id/btnVerifyEmail"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/dim15"
+            android:background="@drawable/button_rectangle_radius"
+            android:text="Verify"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtVerifyCode" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim50"
+            android:background="@color/background_color"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <TextView
+                android:id="@+id/a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Did you not recieve the email ?"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtSendAgain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=" Send it again."
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        &lt;!&ndash;
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim10"
+                android:gravity="center"
+                android:text="Did you not recieve the email? Send it again."
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/constrainlayout" />&ndash;&gt;
+
+
+    </android.support.constraint.ConstraintLayout>-->

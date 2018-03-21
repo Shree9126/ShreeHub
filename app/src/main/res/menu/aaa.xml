@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/tools"
+    tools:context="com.mindnotix.menus"
+    xmlns:myappname="http://schemas.android.com/apk/res-auto"
+    tools:ignore="AppCompatResource"
+    >
+
+    <item android:title="Menu"
+        app:showAsAction="always"
+        myappname:showAsAction="always">
+        <menu>
+            <item android:id="@+id/itemOne"
+                android:title="One"
+                app:showAsAction="never"
+                android:orderInCategory="100"
+                android:icon="@drawable/one">
+            </item>
+
+            <item android:id="@+id/itemTwo"
+                android:title="Two"
+                app:showAsAction="never"
+                android:orderInCategory="100"
+                android:icon="@drawable/two"/>
+
+            <item android:id="@+id/itemThree"
+                android:title="Three"
+                app:showAsAction="never"
+                android:orderInCategory="100"
+                android:icon="@drawable/three"/>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rlParent"
+        android:padding="@dimen/dim10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_pic" />
+
+        <TextView
+            android:id="@+id/txtUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ivProfile"
+            android:layout_toRightOf="@+id/ivProfile"
+            android:gravity="left"
+            android:fontFamily="@font/montserrat_medium"
+            android:paddingLeft="@dimen/dim5"
+            android:singleLine="true"
+            tools:text="Ravi kumar"
+            android:textSize="@dimen/dim15" />
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtUserName"
+            android:layout_toRightOf="@+id/ivProfile"
+            android:gravity="left"
+            android:fontFamily="@font/montserrat_light"
+            android:paddingLeft="4dp"
+            tools:text="Hello buddies"
+            android:textColor="@color/timestamp"
+            android:textSize="@dimen/dim12" />
+
+        <TextView
+            android:id="@+id/txtComments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_below="@+id/txtDate"
+            android:layout_toRightOf="@+id/ivProfile"
+            android:gravity="left"
+            android:paddingLeft="4dp"
+            tools:text="Hello buddies" />
+
+        <ImageView
+
+            android:id="@+id/imgDelete"
+            android:layout_width="20dp"
+            android:tint="@color/grey_500"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_delete_black_24dp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

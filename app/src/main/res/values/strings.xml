@@ -1,0 +1,221 @@
+<resources>
+    <string name="app_name">YouthHub</string>
+    <string name="enter_your_email_id">Username</string>
+    <string name="enter_your_email_ids">Your email</string>
+    <string name="enter_your_password">Password</string>
+    <string name="login">Log in</string>
+    <string name="forgot_password">Forgot your password?</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="large_text">
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic."
+    </string>
+    <string name="one">One</string>
+    <string name="veriry_code">Your code</string>
+    <string name="terms_condition"><![CDATA[ Terms & Conditions]]></string>
+    <string name="privacy_policy"><![CDATA[ Privacy policy.]]></string>
+    <string name="i_accept_youthhub">I accept YouthHub</string>
+
+    <string name="condition"><![CDATA[Privacy Policy]]></string>
+
+
+    <string name="gender_prompt">Gender</string>
+
+    <string-array name="gender_array">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="enthinicity_prompt">Ethnicity</string>
+
+    <string-array name="enthinicity_array">
+        <item>New zealanders</item>
+        <item>Samoans</item>
+        <item>Indians in Fiji</item>
+        <item>Korean</item>
+        <item>Australian</item>
+    </string-array>
+
+    <string name="role_type_prompt">Ethnicity</string>
+
+    <string-array name="role_type_array">
+        <item>Youth</item>
+
+
+    </string-array>
+
+    <string name="region_prompt">Region</string>
+
+    <string-array name="region_array">
+        <item>Auckland</item>
+        <item>Waikato</item>
+        <item>Bay of Plenty</item>
+        <item>Gisborne</item>
+
+    </string-array>
+
+
+    <string name="district_prompt">Region</string>
+    <string name="sample_text">It will work best if you don\'t have too many items with different sizes. Ideally less than 20% of your items are of special sizes, otherwise the library may not find the best way to accommodate all the items without leaving a lot of empty space behind.</string>
+    <string name="date_formate">DD/MM/YYYY</string>
+
+    <string-array name="district_array">
+        <item>All</item>
+
+    </string-array>
+
+    <string-array name="jobwishlist_array">
+        <item>Select</item>
+    </string-array>
+    <string name="title_activity_sample_scrolling">SampleScrollingActivity</string>
+    <string name="title_activity_scrolling_step_one_sign">ScrollingStepOneSign</string>
+    <string name="title_activity_scrolling_forgot_password">ScrollingForgotPassword</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="re_enter_password">Re-Enter Password</string>
+    <string name="submit">Submit</string>
+    <string name="title_activity_scrolling_change_password">ScrollingChangePasswordActivity</string>
+    <string name="confirm_password">Confirm Password</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rationale_photo_picker">We require this permission to select photo from gallery and camera.</string>
+    <string name="rationale_doc_picker">We need this pemission to read documents from device.</string>
+    <string name="loadmore">Load more</string>
+
+    <array name="fruits">
+        <item>Apple</item>
+        <item>Apricot</item>
+        <item>Avocado</item>
+        <item>Banana</item>
+        <item>Bilberry</item>
+        <item>Blackberry</item>
+        <item>Blackcurrant</item>
+        <item>Blueberry</item>
+        <item>Boysenberry</item>
+        <item>Cantaloupe</item>
+        <item>Currant</item>
+        <item>Cherry</item>
+        <item>Cherimoya</item>
+        <item>Cloudberry</item>
+        <item>Coconut</item>
+        <item>Cranberry</item>
+        <item>Damson</item>
+        <item>Date</item>
+        <item>Dragonfruit</item>
+        <item>Durian</item>
+        <item>Elderberry</item>
+        <item>Feijoa</item>
+        <item>Fig</item>
+        <item>Goji berry</item>
+        <item>Gooseberry</item>
+        <item>Grape</item>
+        <item>Raisin</item>
+        <item>Grapefruit</item>
+        <item>Guava</item>
+        <item>Huckleberry</item>
+        <item>Jabuticaba</item>
+        <item>Jackfruit</item>
+        <item>Jambul</item>
+        <item>Jujube</item>
+        <item>Juniper berry</item>
+        <item>Kiwifruit</item>
+        <item>Kumquat</item>
+        <item>Lemon</item>
+        <item>Lime</item>
+        <item>Loquat</item>
+        <item>Longan</item>
+        <item>Lychee</item>
+        <item>Mango</item>
+        <item>Marionberry</item>
+        <item>Melon</item>
+        <item>Cantaloupe</item>
+        <item>Honeydew</item>
+        <item>Watermelon</item>
+        <item>Miracle fruit</item>
+        <item>Mulberry</item>
+        <item>Nectarine</item>
+        <item>Nance</item>
+        <item>Olive</item>
+        <item>Orange</item>
+        <item>Clementine</item>
+        <item>Mandarine</item>
+        <item>Tangerine</item>
+        <item>Papaya</item>
+        <item>Passionfruit</item>
+        <item>Peach</item>
+        <item>Pear</item>
+        <item>Persimmon</item>
+        <item>Physalis</item>
+        <item>Plantain</item>
+        <item>Plum/prune</item>
+        <item>Pineapple</item>
+        <item>Pomegranate</item>
+        <item>Pomelo</item>
+        <item>Purple mangosteen</item>
+        <item>Quince</item>
+        <item>Raspberry</item>
+        <item>Rambutan</item>
+        <item>Redcurrant</item>
+        <item>Salal berry</item>
+        <item>Salak</item>
+        <item>Satsuma</item>
+        <item>Star fruit</item>
+        <item>Strawberry</item>
+        <item>Tamarillo</item>
+        <item>Tamarind</item>
+        <item>Ugli fruit</item>
+    </array>
+    <string name="title_activity_job_list">JobListActivity</string>
+    <string name="job_title"><![CDATA[Junior Graphic & Web Designer]]></string>
+    <string name="apply_job">Apply</string>
+    <string name="type_job">Full-Time</string>
+    <string name="job_companyName">Mindnotix Technologies</string>
+    <string name="job_companySite">www.mindnotix.in</string>
+    <string name="accept_terms"><![CDATA[Please accept Terms & Conditions]]></string>
+
+
+    <!--    //Mohan-->
+    <string name="first_name">Enter the first name</string>
+    <string name="post_code">Enter the postcode</string>
+    <string name="street_name">Enter the street name</string>
+    <string name="email_name">Enter the email</string>
+    <string name="iwi_name">Select Some Options</string>
+    <string name="mobile_number">Enter the mobile number</string>
+    <string name="last_name">Enter the last name</string>
+    <string name="DOB">Enter the date of birth</string>
+    <string name="work_availbiltiy">Eg:20</string>
+
+    <!--communication links-->
+
+    <string name="instagram_link">https://www.instagram.com/xxxxxxx</string>
+    <string name="facebook_link">https://www.facebook.com/xxxxxxx</string>
+    <string name="twitter_link">https://twitter.com/xxxxxxx</string>
+    <string name="gplus_link">https://plus.google.com/xxxxxxx</string>
+    <string name="linked_in_link">https://www.linkedin.com/xxxxxxx</string>
+    <string name="guithub_link">https://www.github.com/xxxxxxx</string>
+    <string name="behance_link">https://www.behance.com/xxxxxxx</string>
+    <string name="title_activity_nav_drawer">NavDrawerActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="title_invite_hint">example1@gmail.com /n example2@gmail.com</string>
+    <string name="title_activity_jobs_maps">Map</string>
+    <string name="title_activity_event_list_map">Map</string>
+    <string name="aaaaaa">#Education,#Training,#My Interests,#HomeOwnership,#Advice,#Testing, automation</string>
+    <string name="course"><b>Sorry!</b> No course\'s available</string>
+    <string name="event_not_avail"><b>Sorry!</b> No event\'s available</string>
+
+    <string name="no_photo_avail"><b>Sorry!</b> No photo\'s available</string>
+    <string name="no_video_avail"><b>Sorry!</b> No video\'s available</string>
+    <string name="valid_password_atleast">Password should have min 1 number, min 1 upper character and min length 8 character</string>
+    <string name="type_your_message">Send a message</string>
+    <string name="send_a_message">Send a message</string>
+
+</resources>

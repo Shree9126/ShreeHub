@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mindnotix.youthhub.EventAboutFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim10"
+        android:layout_marginRight="@dimen/dim10"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Description"
+            android:id="@+id/txtDescriptionTitle"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/txtEventDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat_light"
+            tools:text="@string/large_text"
+            android:textAlignment="textStart"
+            android:textColor="#777777"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Location"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtEventAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat_light"
+            tools:text="Location"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtEventDistrict"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim5"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Location"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtEventRegion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim5"
+            android:fontFamily="@font/montserrat_light"
+            tools:text="Location"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtEventContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim5"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/montserrat_light"
+            tools:text="Location"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
+

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mindnotix.youthhub">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+
+
+
+    <application
+        android:name="com.mindnotix.application.MyApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_launcher"
+        android:hardwareAccelerated="false"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".TutorialActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.codewaves.youtubethumbnailview.ApiKey"
+            android:value="AIzaSyBaz40ydum2qBOY5azjPbyMpVwltWRE2Y0" />
+
+        <activity
+            android:name=".EmailVerifyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Signup_step_one"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignupStepTwoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignUpStepThreeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ScrollingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ForgotPasswordEmailVerifyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PostCommentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PostLikeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".PostContributeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CreatePostActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait" />
+        <activity android:name=".TermsAndConditionActivity" />
+        <activity
+            android:name=".FullScreenViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".JobListActivity"
+            android:label="@string/title_activity_job_list"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait" />
+        <activity android:name=".JobFilterActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".JobDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".TradeJobViewActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".JobApplyActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".NavDrawerActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ProfileUpdateActivity"
+            android:screenOrientation="portrait"
+            android:label="Profile Update"/>
+        <activity android:name=".SupportRequestActivity"
+            android:screenOrientation="portrait" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".JobsMapsActivity"
+            android:label="@string/title_activity_jobs_maps"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MyJobsActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".EventsActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".EventDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ExploreActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ExploreFilterActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ExploreViewActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".TicketRaiseActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".TicketViewActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ContactSupportActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".EventParticipantsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".YoutubeVideoActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".MapsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EventListMapActivity"
+            android:label="@string/title_activity_event_list_map"></activity>
+        <activity android:name=".MapJobFilterActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".EventListMapFilter"
+            android:screenOrientation="portrait" />
+        <activity android:name=".WebViewActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".find_connection.FindConnectinYouthActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".find_connection.FindConnectYouthFilter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".find_connection.FindConnectionServiceProviderActivity"
+            android:label="Service Provider"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".find_connection.FindConnectionServiceProviderFilter"
+            android:screenOrientation="portrait" />
+        <activity android:name=".find_connection.FindTertiaryActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".find_connection.FindSchoolsActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".find_connection.FindTeachersActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".find_connection.FindBusinessFilter"
+            android:screenOrientation="portrait" />
+        <activity android:name=".find_connection.FindBusinessActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".find_connection.FindNavigatorsActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".find_connection.FindConnectNavigatorFilter"
+            android:screenOrientation="portrait" />
+        <activity android:name=".dashboard_message.ChatActivity" />
+        <activity android:name=".ExploreFragment.WebPdfActivity" />
+
+
+
+
+        <activity android:name=".cvresume.Education.EducationResumeActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".cvresume.workExperience.WorkExperienceEditActivity"
+            android:label="Work Experience"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".cvresume.volunteerExperience.VolunteerExperienceActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".cvresume.volunteerExperience.VolunterExperienceEditActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".cvresume.achievementsAward.AchievementsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".cvresume.achievementsAward.AchievementsEditActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".cvresume.addExtraActivites.TechnicalSkillsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".cvresume.addExtraActivites.LanguagesActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".cvresume.addExtraActivites.InterestsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".cvresume.Education.EducationEditActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".cvresume.workExperience.WorkExperienceActivity"
+            android:screenOrientation="portrait"/>
+
+
+
+    </application>
+
+</manifest>

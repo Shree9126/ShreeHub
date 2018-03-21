@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginBottom="@dimen/dim10"
+    android:layout_marginTop="@dimen/dim5"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_without_stroke"
+        android:orientation="vertical">
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imgEvents"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/no_preview" />
+
+
+            <ProgressBar
+                android:id="@+id/imgJobLists_progress"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim10"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="@dimen/dim10"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtEventTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:gravity="start"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Matariki Art Classes "
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtMoreDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:gravity="end"
+                    android:text="More"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/medium_level_blue"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_300" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim10"
+                android:layout_marginRight="@dimen/dim10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtEventDateAndTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim5"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:gravity="start"
+                    android:text="Matariki Art Classes "
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtEventAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim5"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:gravity="start"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="North shore - Auckland region "
+                    android:textColor="@color/grey_800"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txtEventAttending"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim5"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:gravity="start"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="3 Attending "
+                    android:textColor="@color/grey_800"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtOrganishBy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserrat_light"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="Organised by Anna ven den berg"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/txtPostedDateOn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.4"
+                        android:fontFamily="@font/montserrat_light"
+                        android:gravity="end"
+                        android:text="Posted on: 02-02-2018"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

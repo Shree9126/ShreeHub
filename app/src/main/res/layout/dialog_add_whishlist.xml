@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:TagsEditText="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:gravity="start|center"
+                android:text="Add a Wishlist"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="18sp" />
+
+
+            <RelativeLayout
+                android:id="@+id/icClose"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="end|center">
+
+                <ImageView
+
+
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/ic_close_black_24dp" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_300" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tvDecription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:gravity="start|center"
+                    android:text="Wishlist Tag" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="start|center"
+                    android:text=" *"
+                    android:textColor="@color/red" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+
+                <mabbas007.tagsedittext.TagsEditText
+                    android:id="@+id/tagsEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:padding="8dp"
+                    android:hint="Select Some Options"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:paddingRight="8dp"
+                    android:textSize="14sp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:textColor="@color/medium_level_blue"
+                    TagsEditText:allowSpaceInTag="true"
+                    TagsEditText:tagsBackground="@drawable/square_default"
+                    TagsEditText:tagsCloseImageRight="@drawable/tag_close" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btSaveChages"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@color/medium_level_blue"
+                android:text="   Save Changes   "
+                android:fontFamily="@font/montserrat_medium"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/grey_300"
+                android:fontFamily="@font/montserrat_medium"
+                android:text=" Cancel"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

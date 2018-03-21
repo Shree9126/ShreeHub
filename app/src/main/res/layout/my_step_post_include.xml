@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearTags"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dim5"
+            android:orientation="vertical"
+            android:padding="@dimen/dim5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tagEducation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dim3"
+                    android:layout_weight="1"
+                    android:background="@color/grey_300"
+                    android:gravity="center"
+                    android:padding="@dimen/dim5"
+                    android:text="# Education"
+                    android:textSize="12sp" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/tagTraining"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="@dimen/dim3"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@color/grey_300"-->
+                <!--android:gravity="center"-->
+                <!--android:padding="@dimen/dim5"-->
+                <!--android:text="# Training"-->
+                <!--android:textSize="12sp" />-->
+
+                <TextView
+                    android:id="@+id/tagMyInterest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@id/tagCommunity"
+                    android:layout_weight="1"
+                    android:background="@color/grey_300"
+                    android:gravity="center"
+                    android:padding="@dimen/dim5"
+                    android:text="# My Interests"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tagEmployment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dim3"
+                    android:layout_weight="1"
+                    android:background="@color/grey_300"
+                    android:gravity="center"
+                    android:padding="@dimen/dim5"
+                    android:text="# Employment"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tagVolunteering"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@color/grey_300"
+                    android:gravity="center"
+                    android:padding="@dimen/dim5"
+                    android:text="# Volunteering"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tagCommunity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tagEducation"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@color/grey_300"
+                    android:gravity="center"
+                    android:padding="@dimen/dim5"
+                    android:text="# Commnunity"
+                    android:textSize="12sp" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/tagMyInterest"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="3dp"-->
+                <!--android:layout_toRightOf="@id/tagCommunity"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@color/grey_300"-->
+                <!--android:gravity="center"-->
+                <!--android:padding="@dimen/dim5"-->
+                <!--android:text="# My Interests"-->
+                <!--android:textSize="12sp" />-->
+
+                <TextView
+                    android:id="@+id/tagTraining"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dim3"
+                    android:layout_weight="1"
+                    android:background="@color/grey_300"
+                    android:gravity="center"
+                    android:padding="@dimen/dim5"
+                    android:text="# Training"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tagEvents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dim3"
+                    android:layout_weight="1"
+                    android:background="@color/grey_300"
+                    android:gravity="center"
+                    android:padding="@dimen/dim5"
+                    android:text="# Events"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tagAddCustomTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dim3"
+                    android:layout_weight="1"
+                    android:background="@color/grey_400"
+                    android:gravity="center"
+                    android:padding="@dimen/dim5"
+                    android:text="# Add custom tag"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:id="@+id/tagNewCreate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dim3"
+                    android:layout_weight="1"
+                    android:background="@color/grey_400"
+                    android:gravity="center"
+                    android:padding="@dimen/dim5"
+                    android:text="# Add new tag"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearBootom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtCustomTag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:padding="@dimen/dim5"
+                    android:singleLine="true"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearAddTags"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/rectangel_white_gray_stroke"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/edtAddTags"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="Add your new tag here.."
+                    android:paddingLeft="@dimen/dim5" />
+
+
+                <TextView
+                    android:id="@+id/txtAddNewTag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:text="Add"
+                    android:textColor="@color/medium_level_blue" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearCustomTagsList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewCustomTagList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearCameraVideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imgVideoImageThumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/no_preview" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearCameraImages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imgTakeImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/no_preview" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearImages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_pic"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/background_color"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dim10"
+        android:layout_marginRight="@dimen/dim10"
+        android:layout_marginLeft="@dimen/dim10"
+        android:background="@drawable/list_item_divider_thin"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop" />
+
+
+            <com.codewaves.youtubethumbnailview.ThumbnailView
+                android:id="@+id/thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@android:color/black"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/noImage"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/logo" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/exploreId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Shiksha.com"
+            android:textColor="@color/medium_level_blue" />
+
+
+        <TextView
+            android:id="@+id/explorePostedBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Sam smith"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/exploreRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:text="Very Good"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/exploreDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:maxLines="2"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="Sam smith"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/exploreDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Nov 11, 2017"
+            android:textColor="@color/medium_level_blue"
+            android:textSize="13sp" />
+
+
+        <Button
+            android:id="@+id/btViewMore"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="8dp"
+            android:background="@color/medium_level_blue"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="View More"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

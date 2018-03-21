@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/one"
+        android:icon="@drawable/ic_delete_black_24dp"
+        app:showAsAction="never"
+        android:title="Remove" />
+
+    <item
+        android:id="@+id/two"
+        android:icon="@drawable/ic_mode_edit_black_24dp"
+        android:title="Edit" />
+
+    <item
+        android:id="@+id/three"
+        android:icon="@drawable/ic_add_black_24dp"
+        android:title="Add to step" />
+
+    <item
+        android:id="@+id/menuFavourite"
+        android:icon="@drawable/ic_bookmark_border_black_24dp"
+        android:title="Favourite" />
+
+</menu>
